@@ -10,16 +10,27 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:lowlight-block.helloWorld"
+		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "lowlight-block.helloWorld",
-				"title": "Hello World"
+				"command": "lowlight-block.lowlight",
+				"title": "Lowlight Block: Low Light Language Block"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Lowlight Block",
+			"properties": {
+				"lowlight-block.rules": {
+					"type": "array",
+					"default": [],
+					"scope": "window",
+					"description": "regex of match points"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
