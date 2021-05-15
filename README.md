@@ -24,7 +24,7 @@ Currently, the extension support:
 }
 ```
 
-![bracket example](images/bracket_example.png)
+![bracket example](media/bracket_example.png)
 
 ## Extension Settings
 
